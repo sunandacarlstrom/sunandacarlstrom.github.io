@@ -1,0 +1,64 @@
+.btn {
+    padding: 1rem 1.2rem;
+    display: inline-block;
+    border-radius: 1.8rem;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    line-height: 1.4;
+    height: fit-content;
+}
+
+/* .btn:visited {
+    color: var(--text-color-dark);
+} */
+
+.btn-find {
+    padding: 0.4rem 1rem;
+    display: inline-block;
+    border-radius: 1rem;
+    font-size: 0.7rem;
+}
+
+/* .btn-find:visited {
+    color: var(--text-color-dark);
+} */
+
+.btn-primary-color {
+    color: var(--text-color-light);
+    background-color: var(--primary-color);
+    font-weight: 700;
+}
+.btn-primary-color:hover {
+    color: var(--text-color-light);
+    background-color: var(--primary-color-shade);
+}
+
+.btn-secondary-color {
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
+    font-weight: 700;
+}
+
+.btn-secondary-color:hover {
+    color: var(--primary-text-color);
+    background-color: var(--secondary-light-color);
+}
+
+.btn-navbar {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    border-radius: 1.5rem;
+}
+
+.small {
+    font-size: 0.6rem;
+    padding: 0.8rem 1rem;
+}
+
+@media screen and (min-width: 500px) and (max-width: 940px) {
+    .btn {
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
+        font-size: 1rem;
+    }
+}

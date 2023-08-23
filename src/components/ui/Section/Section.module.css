@@ -1,0 +1,13 @@
+.container {
+    height: 75vh;
+    width: 100vw;
+    padding: var(--main-content-padding);
+}
+
+.yellow {
+    background-color: var(--bg-primary);
+}
+
+.white {
+    background-color: var(--bg-light);
+}

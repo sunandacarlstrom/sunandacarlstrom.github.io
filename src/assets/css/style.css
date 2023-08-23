@@ -2,12 +2,16 @@
 
 :root {
     --primary-color: #fbc02d;
-    --secondary-color: #f57c00;
-    --text-color-light: #efebe9;
-    --text-color-dark: #3e2723;
-    --navbar-color: #f9a825;
-    --bg-dark: #212121;
+    --primary-color-shade: #daa728;
+    --secondary-color: #d6336c;
+    --text-color-light: #ffffff;
+    --text-color-dark: #212529;
+
+    --bg-primary: rgba(255, 236, 153, 1);
+    --bg-dark: #3e2723;
     --bg-light: #fafafa;
+
+    --main-content-padding: 0.5rem 0.5rem;
 }
 
 * {
@@ -19,12 +23,18 @@
 body {
     font-family: "Poppins", sans-serif;
     line-height: 1.6;
-    background-color: var(--bg-light);
     color: var(--text-color-dark);
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-weight: 400;
+}
+
+@media screen and (min-width: 940px) {
+    :root {
+        --main-content-padding: 10rem 10rem;
+    }
 }
