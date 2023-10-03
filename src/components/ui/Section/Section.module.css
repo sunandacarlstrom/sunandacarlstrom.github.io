@@ -2,6 +2,15 @@
     height: 75vh;
     width: 100vw;
     padding: var(--main-content-padding);
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
 }
 
 .yellow {
@@ -10,4 +19,10 @@
 
 .white {
     background-color: var(--bg-light);
+}
+
+@media screen and (min-width: 940px) {
+    .content{
+        flex-direction: row;
+    }
 }
