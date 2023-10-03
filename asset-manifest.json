@@ -1,10 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.20447903.js",
+    "main.css": "/static/css/main.0d561a16.css",
+    "main.js": "/static/js/main.4a9345fc.js",
+    "static/media/sunanda_closeup.jpg": "/static/media/sunanda_closeup.3eeebea7c2b8ea098c9f.jpg",
+    "static/media/sunanda_logo.png": "/static/media/sunanda_logo.f935276c1430a4ceb9dc.png",
     "index.html": "/index.html",
-    "main.20447903.js.map": "/static/js/main.20447903.js.map"
+    "main.0d561a16.css.map": "/static/css/main.0d561a16.css.map",
+    "main.4a9345fc.js.map": "/static/js/main.4a9345fc.js.map"
   },
   "entrypoints": [
-    "static/js/main.20447903.js"
+    "static/css/main.0d561a16.css",
+    "static/js/main.4a9345fc.js"
   ]
 }
