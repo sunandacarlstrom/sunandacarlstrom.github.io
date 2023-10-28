@@ -1,12 +1,20 @@
 import styles from "./Competence.module.css";
 import PropTypes from "prop-types";
+import FontAwesome from "../Icons/FontAwesome";
 
-const Competence = ({ children, color, title, subTitle }) => {
+const Competence = ({ children, color, title, subTitle, icon }) => {
     return (
         <div className={`${styles.container} ${styles[color]}`}>
-            {children}
-            <h1>{title}</h1>
-            <h2>{subTitle}</h2>
+            <div>
+                <FontAwesome icon={icon} color="#d6336c" />
+                <h1 className={styles.title}>{title}</h1>
+            </div>
+                {children}
+            <div className={styles.subTitles}>
+                {subTitle.map((s) => (
+                    <h2 className={styles.subTitle}>{s}</h2>
+                ))}
+            </div>
         </div>
     );
 };
@@ -20,7 +28,7 @@ Competence.propTypes = {
 // Definerar standardvärden på egenskaper
 Competence.defaultProps = {
     title: "Rubrik för sidan",
-    subTitle: "Underubrik för sidan",
+    subTitle: ["Underubrik för sidan"],
 };
 
 export default Competence;

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFontAwesome, faCode, faServer } from "@fortawesome/free-solid-svg-icons";
 
-const FontAwesome = ({ icon, size }) => {
+const FontAwesome = ({ icon, size, color }) => {
     if (size === undefined) {
         size = "2x";
     }
@@ -24,7 +24,7 @@ const FontAwesome = ({ icon, size }) => {
 
     return (
         <>
-            <FontAwesomeIcon icon={faIcon} size={size} />
+            <FontAwesomeIcon icon={faIcon} size={size} color={color}/>
         </>
     );
 };

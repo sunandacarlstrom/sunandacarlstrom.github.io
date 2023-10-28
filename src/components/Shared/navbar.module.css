@@ -3,7 +3,6 @@ header {
     z-index: 1;
     top: 0;
     opacity: 0.9;
-    /* background: var(--primary-color); */
     height: 10vh;
 }
 
@@ -53,6 +52,7 @@ nav ul li a {
     justify-content: flex-end;
     padding: 0.4rem 0.5rem;
     color: var(--secondary-color);
+    text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -76,8 +76,8 @@ nav ul li .menu-icon {
 nav ul li .menu-icon .nav-icon {
     background-color: var(--secondary-color);
     display: block;
-    height: 2px;
-    width: 18px;
+    height: 0.1rem;
+    width: 1rem;
     position: relative;
     transition: background-color 0.2s ease-out;
 }
@@ -94,11 +94,11 @@ nav ul li .menu-icon .nav-icon:after {
 }
 
 nav ul .menu-icon .nav-icon:before {
-    top: -5px;
+    top: -0.25rem;
 }
 
 nav ul li .menu-icon .nav-icon:after {
-    top: 5px;
+    top: 0.25rem;
 }
 
 /* Animate the hamburger menu */
@@ -116,7 +116,26 @@ nav ul li .menu-btn:checked ~ .menu-icon .nav-icon::after {
     top: 0;
 }
 
-@media screen and (min-width: 500px) and (max-width: 1100px) {
+@media screen and (min-width: 412px) and (max-width: 940px) {
+
+    nav ul li .menu-icon .nav-icon {
+        height: 0.2rem;
+        width: 2.2rem;
+    }
+
+    nav ul .menu-icon .nav-icon:before {
+        top: -0.65rem;
+    }
+    
+    nav ul li .menu-icon .nav-icon:after {
+        top: 0.65rem;
+    }
+
+    .logo {
+        height: 6rem;
+        width: auto;
+    }
+
     .navbar-container {
         padding: 0 1rem;
     }
@@ -130,7 +149,7 @@ nav ul li .menu-btn:checked ~ .menu-icon .nav-icon::after {
     }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 940px) {
     .navbar-container {
         padding: 0 2rem;
     }
@@ -140,9 +159,15 @@ nav ul li .menu-btn:checked ~ .menu-icon .nav-icon::after {
         justify-content: flex-start;
         font-size: 1.1rem;
     }
+
+    nav ul li {
+        background-color: transparent !important;
+    }
+
     nav ul li.menu-item {
         display: block;
         width: auto;
+        background-color: none;
     }
 
     nav ul li.toggle {

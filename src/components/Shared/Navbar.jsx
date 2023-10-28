@@ -1,7 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/images/logo/sunanda_logo.png";
-import NavButton from "../ui/Button/NavButton"; 
+import NavButton from "../ui/Button/NavButton";
 import styles from "./navbar.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
     return (
@@ -9,9 +10,9 @@ const Navbar = () => {
             <nav>
                 <ul className={styles.menu}>
                     <li>
-                        <Link to="/">
+                        <NavLink to="/">
                             <img src={Logo} alt="Sunanda logotyp" className={styles.logo} />
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className={styles.toggle}>
                         <input className={styles["menu-btn"]} type="checkbox" id="menu-btn" />
@@ -20,10 +21,7 @@ const Navbar = () => {
                         </label>
                     </li>
                     <li className={styles["menu-item"]}>
-                        <NavLink to="/">[ START ]</NavLink>
-                    </li>
-                    <li className={styles["menu-item"]}>
-                        <NavLink to="/.NET">[ .NET ]</NavLink>
+                        <NavLink to="/NET">[ .NET ]</NavLink>
                     </li>
                     <li className={styles["menu-item"]}>
                         <NavLink to="/GDK">[ GDK ]</NavLink>
@@ -38,6 +36,7 @@ const Navbar = () => {
                         <div className={styles["navbar-container-btn"]}>
                             <span>
                                 <NavButton href="/contact" background="primary">
+                        <FontAwesomeIcon icon="message" />
                                     Kontakta mig
                                 </NavButton>
                             </span>

@@ -12,21 +12,29 @@ const Home = () => {
             <Gradient />
             <Navbar />
             <Hero />
-            <Section color="white" title="Sektion 1" subTitle="Min kompetens">
+            <Section color="white" title="Min kompetens" subTitle="Det här kan jag">
+                <Competence title="Backend" subTitle={[".NET", "Node.js"]} icon="server">
+                    <p>Jobbar helst med backend i ASP.NET C#</p>
+                </Competence>
+                <Competence title="Frontend" subTitle={["ASP.NET MVC", "React"]} icon="code">
+                    <p>Jobbar helst med frontend i HTML, CSS, JavaScript med React.</p>
+                    <p>Bl.a. denna sida är byggd med React.</p>
+                </Competence>
+                <Competence title="UX/UI" subTitle={["Adobe CC", "Figma"]} icon="">
+                    <p>Skapa wireframes och enkla prototyper.</p>
+                </Competence>
+            </Section>
+            {/*
+            </Section>
+            {/* <Section color="yellow" title="Sektion 2" subTitle="Portfölj">
+                <p>Här är ett urval av projekt som jag har gjort hittills</p>
+            </Section> */}
+            {/* <Section color="white" title="Sektion 3" subTitle="Om mig">
                 <Competence title=".Net" subTitle="Hello">
                     <FontAwesome icon="code" />
                 </Competence>
-                <Competence title="React" subTitle="Web">
-                    <FontAwesome icon="server" size="4x" />
-                </Competence>
-                <Competence title="React" subTitle="Web">
-                    <FontAwesome icon="server" size="4x" />
-                </Competence>
-            </Section>
-            <Section color="yellow" title="Sektion 2" subTitle="Portfölj">
-                <p>Här ska text och ikoner synas</p>
-            </Section>
-
+                <p>Min bakgrund och tidigare utbildningar</p>
+            </Section> */}
             {/* <Footer /> */}
         </>
     );
