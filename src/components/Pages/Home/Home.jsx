@@ -2,9 +2,10 @@ import Navbar from "../../Shared/Navbar";
 import Competence from "../../ui/Competence/Competence";
 import Gradient from "../../ui/Gradient/Gradient";
 import Hero from "../../ui/Hero/Hero";
-import FontAwesome from "../../ui/Icons/FontAwesome";
-
+import Portfolio from "../../ui/Portfolio/Portfolio";
 import Section from "../../ui/Section/Section";
+import CardList from "../../ui/CardList/CardList";
+import portfolio from "../../../assets/data/portfolio";
 
 const Home = () => {
     return (
@@ -24,8 +25,14 @@ const Home = () => {
                     <p>Skapa wireframes och enkla prototyper.</p>
                 </Competence>
             </Section>
-            {/*
+
+            <Section color="yellow" title="Portfolio" subTitle="Det här har jag gjort">
+                <CardList cards={portfolio.projects}></CardList>
+                <CardList cards={portfolio.projects}></CardList>
+                <CardList cards={portfolio.projects}></CardList>
+                <CardList cards={portfolio.projects}></CardList>
             </Section>
+            {/*
             {/* <Section color="yellow" title="Sektion 2" subTitle="Portfölj">
                 <p>Här är ett urval av projekt som jag har gjort hittills</p>
             </Section> */}

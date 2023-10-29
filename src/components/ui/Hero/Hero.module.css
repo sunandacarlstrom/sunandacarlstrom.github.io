@@ -10,8 +10,9 @@
 }
 
 .highlights {
-    height: 90%;
+    max-height: 100%;
     display: flex;
+    align-items: center;
     text-align: center;
     flex-direction: column;
     gap: 1rem;
@@ -20,6 +21,7 @@
     border: 2px solid var(--bg-dark);
     border-radius: 10px;
     flex: 1;
+    position: relative;
 }
 
 .highlights1 {
@@ -45,7 +47,7 @@
 .about {
     font-size: 0.6rem;
     color: var(--bg-dark);
-    padding-top: 1.5rem;
+    padding: 1.5rem 0rem 2.5rem 0rem;
 }
 
 /* Galaxy A51 */
@@ -54,14 +56,32 @@
         width: 15rem;
     }
 
-    .highlights {
-        height: 90%;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
+    .name {
+        font-size: 1.85rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .secondary-title {
+        font-size: 1rem;
+    }
+
+    .about {
+        font-size: 1rem;
+        max-width: 20rem;
         color: var(--bg-dark);
-        padding: 25px;
-        border: 3px solid var(--bg-dark);
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .hero {
+        width: 16rem;
+    }
+
+    .highlights {
+        border: 0px;
     }
 
     .name {
@@ -69,67 +89,14 @@
     }
 
     .title {
-        font-size: 2.1rem;
-        color: var(--primary-color);
+        font-size: 2rem;
     }
 
     .secondary-title {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .about {
-        font-size: 0.95rem;
-        color: var(--bg-dark);
-        padding-top: 1rem;
-    }
-}
-
-@media screen and (min-width: 940px) {
-    /* .container {
-        height: 90vh;
-        padding: var(--main-content-padding);
-    } */
-
-    .hero {
-        width: 8rem;
-        border-radius: 50%;
-    }
-
-    .highlights {
-        height: 90%;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        gap: 1rem;
-        color: var(--bg-dark);
-        padding: 15px;
-        border: 0px;
-        flex: 1;
-    }
-
-    .highlights1 {
-        flex-grow: 1;
-    }
-    .highlights2 {
-        flex-grow: 0;
-    }
-
-    .name {
-        font-size: 0.85rem;
-    }
-
-    .title {
         font-size: 1rem;
-        color: var(--primary-color);
-    }
-
-    .secondary-title {
-        font-size: 0.5rem;
-    }
-
-    .about {
-        font-size: 0.5rem;
-        color: var(--bg-dark);
-        padding-top: 1rem;
     }
 }

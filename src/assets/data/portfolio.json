@@ -1,0 +1,10 @@
+{
+    "projects": [
+        {
+          "id": 1,
+          "name": "Fryele Stallklubb",
+          "description": "Som övningsuppgift fick vi i klassen i uppdrag att individuellt skapa en webbplats åt en liten förening som driver en ridskola. Vi fick en kort presentation om kunden och vilka krav som fanns att förhålla sig till",
+          "src": "default.jpg"
+        }
+      ]
+}

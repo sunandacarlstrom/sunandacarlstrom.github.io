@@ -13,12 +13,12 @@ const Hero = () => {
                     <p className={styles.name}>Sunanda Carlström</p>
                     <p className={styles.title}>Webbutvecklare</p>
                     <p className={styles["secondary-title"]}>Grafisk Designer | Kommunikatör</p>
-                    <p className={styles.about}>På fritiden gillar jag att umgås med vänner & familj, dansa bugg, salsa & lindyhop samt experimentera i köket</p>
+                    <p className={styles.about}>På fritiden gillar jag att umgås med vänner & familj, dansa bugg, salsa & lindyhop samt experimentera i köket.</p>
                     {/* <p className={styles.about}>Klicka för att lära känna mig mer!</p> */}
+                </div>
                     <Button href="#" background="primary">
                         ↓
                     </Button>
-                </div>
             </section>
         </div>
     );
