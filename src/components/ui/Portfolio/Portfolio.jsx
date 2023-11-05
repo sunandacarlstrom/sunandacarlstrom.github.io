@@ -1,32 +1,12 @@
-
+import { useState, useEffect } from "react";
 import styles from "./Portfolio.module.css";
+import CardList from "../CardList/CardList";
+import portfolio from "../../../assets/data/portfolio";
 
-const Portfolio = ({ title, subTitle, color }) => {
-    return (
-        <div className={`${styles.card} ${styles[color]}`}>
-            <div>
-                {/* <FontAwesome icon={icon} color="#d6336c" /> */}
-                <h1 className={styles.title}>{title}</h1>
-            </div>
-            <div className={styles.subTitles}>
-                {subTitle.map((s) => (
-                    <h2 className={styles.subTitle}>{s}</h2>
-                ))}
-            </div>
-        </div>
-    );
+const Portfolio = () => {
+    const projectes = portfolio.projects;
+    projectes.reverse();
+
+    return <CardList cards={projectes}></CardList>;
 };
-
-// Definierar egenskapers typer och om de är obligatoriska
-// Portfolio.propTypes = {
-//     title: PropTypes.string.isRequired,
-//     subTitle: PropTypes.string.isRequired,
-// };
-
-// Definerar standardvärden på egenskaper
-// Portfolio.defaultProps = {
-//     title: "Rubrik för sidan",
-//     subTitle: ["Underubrik för sidan"],
-// };
-
 export default Portfolio;

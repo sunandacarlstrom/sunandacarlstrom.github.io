@@ -14,23 +14,20 @@ const Home = () => {
             <Navbar />
             <Hero />
             <Section color="white" title="Min kompetens" subTitle="Det här kan jag">
-                <Competence title="Backend" subTitle={[".NET", "Node.js"]} icon="server">
-                    <p>Jobbar helst med backend i ASP.NET C#</p>
+                <Competence title="Backend" subTitles={[".NET", "Node.js"]} icon="server">
+                    <p className="text">Jobbar helst med backend i ASP.NET C#</p>
                 </Competence>
-                <Competence title="Frontend" subTitle={["ASP.NET MVC", "React"]} icon="code">
-                    <p>Jobbar helst med frontend i HTML, CSS, JavaScript med React.</p>
-                    <p>Bl.a. denna sida är byggd med React.</p>
+                <Competence title="Frontend" subTitles={["ASP.NET MVC", "React"]} icon="code">
+                    <p className="text">Jobbar helst med frontend i HTML, CSS, JavaScript med React.</p>
+                    <p className="text">Bl.a. denna sida är byggd med React.</p>
                 </Competence>
-                <Competence title="UX/UI" subTitle={["Adobe CC", "Figma"]} icon="">
-                    <p>Skapa wireframes och enkla prototyper.</p>
+                <Competence title="UX/UI" subTitles={["Adobe CC", "Figma"]} icon="">
+                    <p className="text">Skapa wireframes och enkla prototyper.</p>
                 </Competence>
             </Section>
 
             <Section color="yellow" title="Portfolio" subTitle="Det här har jag gjort">
-                <CardList cards={portfolio.projects}></CardList>
-                <CardList cards={portfolio.projects}></CardList>
-                <CardList cards={portfolio.projects}></CardList>
-                <CardList cards={portfolio.projects}></CardList>
+                <Portfolio/>
             </Section>
             {/*
             {/* <Section color="yellow" title="Sektion 2" subTitle="Portfölj">

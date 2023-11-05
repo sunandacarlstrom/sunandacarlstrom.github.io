@@ -4,11 +4,22 @@
     text-align: center;
 }
 
-.content{
-    display: grid; 
-    grid-template-columns: 1fr;
-    padding: 2rem; 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0.5rem;
     gap: 2rem;
+}
+
+.title{
+    color: var(--text-color-dark);
+}
+
+.subTitle{
+    color: var(--text-color-dark);
+    font-size: var(--title-size);
+    font-style: italic;
 }
 
 .yellow {
@@ -19,8 +30,11 @@
     background-color: var(--bg-light);
 }
 
+
 @media screen and (min-width: 940px) {
-    .content{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2rem 0.5rem;
     }
 }

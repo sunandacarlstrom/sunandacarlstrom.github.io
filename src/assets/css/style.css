@@ -12,7 +12,10 @@
     --bg-dark: #3e2723;
     --bg-light: #fafafa;
 
-    --main-content-padding: 2rem 0.5rem;;
+    --main-content-padding: 2rem 0.7rem;
+
+    --title-size: 1.4rem;
+    --text-size: 0.8rem;
 }
 
 * {
@@ -29,7 +32,10 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     line-height: 1.6;
-    color: var(--text-color-dark);
+}
+
+p {
+    font-size: var(--text-size);
 }
 
 h1,
@@ -41,6 +47,6 @@ h4 {
 
 @media screen and (min-width: 940px) {
     :root {
-        --main-content-padding: 2rem 2rem; 
+        --main-content-padding: 2rem 2rem;
     }
 }

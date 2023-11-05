@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 const Section = ({ children, color, title, subTitle }) => {
     return (
         <div className={`${styles.container} ${styles[color]}`}>
-            <h1>{title}</h1>
-            <h2>{subTitle}</h2>
+            <h1 className={styles.title}>{title}</h1>
+            <h2 className={styles.subTitle}>{subTitle}</h2>
             <div className={styles.content}>{children}</div>
         </div>
     );

@@ -46,8 +46,8 @@
 
 .about {
     font-size: 0.6rem;
-    color: var(--bg-dark);
-    padding: 1.5rem 0rem 2.5rem 0rem;
+    color: var(--text-color-brown);
+    padding: 1.5rem 1rem 2.5rem 1rem;
 }
 
 /* Galaxy A51 */
@@ -69,9 +69,7 @@
     }
 
     .about {
-        font-size: 1rem;
-        max-width: 20rem;
-        color: var(--bg-dark);
+        font-size: var(--text-size);
     }
 }
 
@@ -97,6 +95,6 @@
     }
 
     .about {
-        font-size: 1rem;
+        font-size: var(--text-size);
     }
 }

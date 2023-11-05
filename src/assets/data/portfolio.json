@@ -1,10 +1,33 @@
 {
     "projects": [
         {
-          "id": 1,
-          "name": "Fryele Stallklubb",
-          "description": "Som övningsuppgift fick vi i klassen i uppdrag att individuellt skapa en webbplats åt en liten förening som driver en ridskola. Vi fick en kort presentation om kunden och vilka krav som fanns att förhålla sig till",
-          "src": "default.jpg"
+            "id": 1,
+            "name": "Fryele Stallklubb",
+            "description": "Som övningsuppgift fick vi i klassen i uppdrag att individuellt skapa en webbplats åt en liten förening som driver en ridskola. Vi fick en kort presentation om kunden och vilka krav som fanns att förhålla sig till",
+            "src": "default.jpg",
+            "link": "#"
+        },
+        {
+            "id": 2,
+            "name": "Weather App Today",
+            "description": "Som övningsuppgift fick vi i klassen i uppdrag att individuellt skapa en webbplats åt en liten förening som driver en ridskola. Vi fick en kort presentation om kunden och vilka krav som fanns att förhålla sig till",
+            "src": "default.jpg",
+            "link": "https://github.com/sunandacarlstrom/WeatherAppToday",
+            "preview": "https://sunandacarlstrom.github.io/WeatherAppToday/"
+        },
+        {
+            "id": 3,
+            "name": "Event App",
+            "description": "Som övningsuppgift fick vi i klassen i uppdrag att individuellt skapa en webbplats åt en liten förening som driver en ridskola. Vi fick en kort presentation om kunden och vilka krav som fanns att förhålla sig till",
+            "src": "default.jpg",
+            "link": "#"
+        },
+        {
+            "id": 4,
+            "name": "Spin The Globe",
+            "description": "Som övningsuppgift fick vi i klassen i uppdrag att individuellt skapa en webbplats åt en liten förening som driver en ridskola. Vi fick en kort presentation om kunden och vilka krav som fanns att förhålla sig till",
+            "src": "default.jpg",
+            "link": "#"
         }
-      ]
+    ]
 }
