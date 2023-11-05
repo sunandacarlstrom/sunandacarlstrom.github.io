@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.3228a2e8.css",
-    "main.js": "/static/js/main.a0f50481.js",
+    "main.css": "/static/css/main.444f71ce.css",
+    "main.js": "/static/js/main.b1c1b3e0.js",
     "static/media/sunanda_closeup.jpg": "/static/media/sunanda_closeup.3eeebea7c2b8ea098c9f.jpg",
     "static/media/sunanda_logo.png": "/static/media/sunanda_logo.f935276c1430a4ceb9dc.png",
     "static/media/default.jpg": "/static/media/default.92655308eb71221e944c.jpg",
     "index.html": "/index.html",
-    "main.3228a2e8.css.map": "/static/css/main.3228a2e8.css.map",
-    "main.a0f50481.js.map": "/static/js/main.a0f50481.js.map"
+    "main.444f71ce.css.map": "/static/css/main.444f71ce.css.map",
+    "main.b1c1b3e0.js.map": "/static/js/main.b1c1b3e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.3228a2e8.css",
-    "static/js/main.a0f50481.js"
+    "static/css/main.444f71ce.css",
+    "static/js/main.b1c1b3e0.js"
   ]
 }
