@@ -21,7 +21,7 @@ const Card = ({ content }) => {
                 {content.preview ? (
                     <span className={styles.linkButtons}>
                         <a className={styles.linkButton} href={content.preview}>
-                            Visa sida
+                            App
                         </a>
                     </span>
                 ) : (

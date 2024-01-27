@@ -12,11 +12,11 @@
     gap: 2rem;
 }
 
-.title{
+.title {
     color: var(--text-color-dark);
 }
 
-.subTitle{
+.subTitle {
     color: var(--text-color-dark);
     font-size: var(--title-size);
     font-style: italic;
@@ -29,7 +29,6 @@
 .white {
     background-color: var(--bg-light);
 }
-
 
 @media screen and (min-width: 940px) {
     .content {

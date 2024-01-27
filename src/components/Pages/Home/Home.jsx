@@ -18,16 +18,18 @@ const Home = () => {
                     <p className="text">Jobbar helst med backend i ASP.NET C#</p>
                 </Competence>
                 <Competence title="Frontend" subTitles={["ASP.NET MVC", "React"]} icon="code">
-                    <p className="text">Jobbar helst med frontend i HTML, CSS, JavaScript med React.</p>
+                    <p className="text">
+                        Jobbar helst med frontend i HTML, CSS, JavaScript med React.
+                    </p>
                     <p className="text">Bl.a. denna sida är byggd med React.</p>
                 </Competence>
-                <Competence title="UX/UI" subTitles={["Adobe CC", "Figma"]} icon="">
+                <Competence title="UX/UI" subTitles={["Adobe XD", "Figma"]} icon="">
                     <p className="text">Skapa wireframes och enkla prototyper.</p>
                 </Competence>
             </Section>
 
             <Section color="yellow" title="Portfolio" subTitle="Det här har jag gjort">
-                <Portfolio/>
+                <Portfolio />
             </Section>
             {/*
             {/* <Section color="yellow" title="Sektion 2" subTitle="Portfölj">
