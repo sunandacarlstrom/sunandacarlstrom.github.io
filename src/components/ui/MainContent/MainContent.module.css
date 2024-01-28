@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0rem 0.5rem; 
+    padding: var(--main-content-padding);
 }
 
 @media screen and (min-width: 940px) {

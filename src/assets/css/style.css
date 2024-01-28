@@ -12,7 +12,7 @@
     --bg-dark: #3e2723;
     --bg-light: #fafafa;
 
-    --main-content-padding: 2rem 0.7rem;
+    --main-content-padding: 4rem 0.7rem;
 
     --title-size: 1.4rem;
     --text-size: 0.8rem;
@@ -45,8 +45,14 @@ h4 {
     font-weight: 400;
 }
 
+@media screen and (min-width: 412px) and (max-width: 940px) {
+    :root {
+        --main-content-padding: 7rem 2rem 1.8rem 2rem;
+    }
+}
+
 @media screen and (min-width: 940px) {
     :root {
-        --main-content-padding: 2rem 2rem;
+        --main-content-padding: 7rem 2rem 2.4rem 2rem;
     }
 }
